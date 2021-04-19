@@ -139,3 +139,10 @@ article{
 
 /*フッター
 ---------------------------*/
+.footer_bottom{
+    border-top: thin solid gray;
+}
+.footer_bottom ul{
+    display: flex;
+    justify-content: center;
+}
