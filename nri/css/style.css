@@ -8,12 +8,14 @@
 }
 html {
     font-size: 100%;
+    font-feature-settings: "palt"
 }
 body{
-    font-family: ;
+    font-family: 'Noto Sans JP',sans-serif!important;
 }
 a{
     text-decoration: none;
+    color: unset;
 }
 img{
     max-width: 100%;
@@ -25,22 +27,33 @@ li{
 /*ヘッダー
 -------------- */
 .header-nav{
-    height: 60px;
+    height: 65px;
     width: 100%;
     display: flex;
     position: fixed;
     background-color: white;
+    justify-content: space-between;
+    align-items: center;
 }
 .header-logo{
-    height: 60px;
+    height: 65px;
+    margin-left: 12rem;
 }
 .main-nav{
     display: flex;
-    font-size:  0.9rem;
-    font-weight: bold;
+    font-size:  13px;
+    margin-left: 13.5rem;
+    font-weight: 900;
+}
+.main-nav li{
+    margin-right: 16px;
 }
 .sub-nav{
     display: flex;
+    margin-right: 75px;
+}
+.sub-nav li{
+    margin-left: 40px;
 }
 /*本文
 ---------------------*/
@@ -50,11 +63,14 @@ article{
 
 }
 .header-index{
-    padding-top: 60px;
+    padding: 65px 0px 20px 310px;
     display: flex;
+    font-size: 12px;
+    color: gray;
 }
 .header-index a:after{
     content: ">";
+    margin: 0 2px;
 }
 .article-title{
     height: 250px;
@@ -65,11 +81,13 @@ article{
 }
 .icon-item img{
     height: 25px;
+    margin: 0 10px;
 }
-.article-icon_above ,.article-icon_below {
+.article-icon_above{
     display: flex;
+    padding: 30px 0
 }
-.article-icon_above ul,.article-icon_below ul{
+.article-icon_above ul{
     display: flex;
 }
 .article-content-pdf{
@@ -102,6 +120,12 @@ article{
     background-color: white;
     border: thin solid gray;
     text-align: center;
+}
+.article-icon_below {
+    display: flex;
+}
+.article-icon_below ul{
+    display: flex;
 }
 /*企業情報
 ------------------------------------------- */
