@@ -2,6 +2,10 @@
 
 /* 共通部分
 -------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+}
 html {
     font-size: 100%;
 }
@@ -14,3 +18,124 @@ a{
 img{
     max-width: 100%;
 }
+li{
+    list-style-type: none;
+}
+
+/*ヘッダー
+-------------- */
+.header-nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: white;
+}
+.header-logo{
+    height: 60px;
+}
+.main-nav{
+    display: flex;
+    font-size:  0.9rem;
+    font-weight: bold;
+}
+.sub-nav{
+    display: flex;
+}
+/*本文
+---------------------*/
+article{
+    width: 40%;
+    margin: 0 30%;
+
+}
+.header-index{
+    padding-top: 60px;
+    display: flex;
+}
+.header-index a:after{
+    content: ">";
+}
+.article-title{
+    height: 250px;
+    background-image: url(../images/h1_whats_2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.icon-item img{
+    height: 25px;
+}
+.article-icon_above ,.article-icon_below {
+    display: flex;
+}
+.article-icon_above ul,.article-icon_below ul{
+    display: flex;
+}
+.article-content-pdf{
+    position: center;
+    justify-content: center;
+    background: #0c419a;
+    color: white;
+    width: 350px
+}
+.article-content-pdf img{
+    width: 30px;
+    text-align: center;
+}
+.article-content-page_frontback{
+    display: flex;
+    justify-content: space-between;
+}
+.article-content-page_block{
+    height: 150px;
+    background-color: #deecf8;
+}
+.article-content-page_block > .container{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+}
+.article-content-page_block > .container > .item{
+    background-color: white;
+    border: thin solid gray;
+    text-align: center;
+}
+/*企業情報
+------------------------------------------- */
+.corporate_info{
+    width: 50%;
+    margin: 0 25%;
+    justify-content: center;
+}
+.corporate_info ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*FollowUs
+------------------------------------------*/
+.follow_us{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+.follow_us ul{
+    display: flex;
+}
+
+/*ページリンク
+--------------------------------*/
+.page-link{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.heading{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*フッター
+---------------------------*/
