@@ -201,7 +201,7 @@ li{
 /*企業情報
 ------------------------------------------- */
 .corporate_info{
-    width: 50%;
+    width: 1000px ;
     margin: 0 auto;
     justify-content: center;
 }
