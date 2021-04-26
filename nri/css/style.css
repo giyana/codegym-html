@@ -57,6 +57,7 @@ li{
 }
 .sub-nav a:hover{
     opacity: 0.5;
+    cursor: pointer;
 }
 .sub-nav li{
     margin-left: 40px;
