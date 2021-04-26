@@ -89,7 +89,9 @@ li{
     color: white;
 }
 .title{
-    padding: 40px 0 0 24%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 .icon-item img{
     height: 25px;
