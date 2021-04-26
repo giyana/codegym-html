@@ -2,10 +2,7 @@
 
 /* 共通部分
 -------------------- */
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 html {
     font-size: 100%;
     font-feature-settings: "palt"
@@ -15,7 +12,6 @@ body{
 }
 a{
     text-decoration: none;
-    color: unset;
 }
 img{
     max-width: 100%;
@@ -41,31 +37,42 @@ li{
 }
 .main-nav{
     display: flex;
-    font-size:  13px;
+    font-size: 14px;
     margin-left: 13.5rem;
-    font-weight: 900;
+    font-weight: bold;
 }
 .main-nav li{
-    margin-right: 16px;
+    margin-right:15px;
+}
+.main-nav a{
+    color: unset;
+}
+.main-nav a:hover{
+    border-bottom: 2px solid #0c419a;
 }
 .sub-nav{
     display: flex;
     margin-right: 75px;
+}
+.sub-nav a:hover{
+    opacity: 0.5;
 }
 .sub-nav li{
     margin-left: 40px;
 }
 /*本文
 ---------------------*/
-article{
-    width: 40%;
-    margin: 0 30%;
-
-}
+.article{
+    width: 750px;
+    margin: 0 auto;
+    }
 .header-index{
-    padding: 65px 0px 20px 310px;
+    padding: 65px 0px 20px 100px;
     display: flex;
     font-size: 12px;
+    color: gray;
+}
+.header-index a{
     color: gray;
 }
 .header-index a:after{
@@ -79,23 +86,54 @@ article{
     background-position: center;
     color: white;
 }
+.title{
+    padding: 40px 0 0 400px;
+}
 .icon-item img{
     height: 25px;
-    margin: 0 10px;
+}
+.ico{
+    margin:0 10px;
 }
 .article-icon_above{
     display: flex;
-    padding: 30px 0
+    justify-content: flex-end;
+    margin: 35px 0;
+}
+.article-icon_above p{
+    color: gray;
+    font-weight: bold;
+    font-size: 2px;
 }
 .article-icon_above ul{
     display: flex;
 }
-.article-content-pdf{
-    position: center;
+.article-content img{
+    height: 24px;
+    margin-right: 10px;
     justify-content: center;
+}
+.article-content-title{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.article-content-text p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 2;
+}
+.article-content-pdf{
+    text-align: center;
     background: #0c419a;
-    color: white;
-    width: 350px
+    margin: 30px auto;
+    width: 300px;
+}
+.article-content-pdf:hover{
+    opacity: 0.5;
+}
+.article-content-pdf a{
+    color: white
 }
 .article-content-pdf img{
     width: 30px;
@@ -104,25 +142,54 @@ article{
 .article-content-page_frontback{
     display: flex;
     justify-content: space-between;
+    margin: 30px 0;
+}
+.article-content-page_frontback a{
+    color: #0c419a;
+}
+.article-content-page_frontback a:hover{
+    border-bottom: 1px solid #0c419a;
 }
 .article-content-page_block{
-    height: 150px;
+    height: auto;
+    width: auto;
     background-color: #deecf8;
+    padding: 20px;
 }
-.article-content-page_block > .container{
+.block_wrapper > .container > .item :hover{
+    background-color: rgb(141, 141, 141);
+}
+.block_wrapper{
+    margin: 20px;
+}
+.block_wrapper p{
+    font-weight: bold;
+    margin-left: 10px;
+}
+.block_wrapper > .container{
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     gap: 20px;
 }
-.article-content-page_block > .container > .item{
+.block_wrapper > .container > .item{
     background-color: white;
     border: thin solid gray;
     text-align: center;
 }
+.block_wrapper > .container > .item a{
+    color: #0c419a;
+}
 .article-icon_below {
     display: flex;
+    justify-content: flex-end;
+    margin: 35px 0;
+}
+.article-icon_below p{
+    color: gray;
+    font-weight: bold;
+    font-size: 2px;
 }
 .article-icon_below ul{
     display: flex;
@@ -134,39 +201,133 @@ article{
     margin: 0 25%;
     justify-content: center;
 }
+.info_title{
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 2px solid black;
+    border-bottom: 1px dotted black;
+}
+.info_title p{
+    margin: 20px 0px 25px 0px;
+}
 .corporate_info ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
 }
-
+.item a,.page-back a{
+    color:#0c419a;
+}
+.item a:hover{
+    border-bottom: 1px solid #0c419a;
+}
+.title-wrapper{
+    border-bottom: 1px dotted black;
+}
+.title-wrapper ul{
+    margin-bottom: 30px;
+}
+.title-wrapper p{
+    font-weight: bold;
+    margin: 20px 0;
+}
+.title-wrapper a:before{
+    content: ">";
+    margin-right: 5px;
+    color: gray;
+}
+.page-back{
+    margin: 50px 0 70px 0;
+}
+.page-back a:hover{
+    border-bottom: 1px solid #0c419a;
+}
+.page-back a:before{
+    content: "<";
+    margin: 0 2px;
+    color: gray;
+}
 /*FollowUs
 ------------------------------------------*/
 .follow_us{
     border-top: 2px solid gray;
     border-bottom: 2px solid gray;
 }
+.follow_us div{
+    display: flex;
+    margin: 35px 0;
+    justify-content: center;
+}
 .follow_us ul{
     display: flex;
 }
-
+.follow_us p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.sns{
+    margin: 0 20px;
+}
 /*ページリンク
 --------------------------------*/
 .page-link{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.page-title{
+    margin: 40px auto;
+}
+.page-title li:before{
+    content: ">";
+    margin-right: 5px;
+    color: gray;
 }
 .heading{
     margin-bottom: 10px;
     font-weight: bold;
 }
-
+.heading a:hover{
+    border-bottom: 1px solid black;
+}
+.content{
+    font-size: 90%;
+}
+.content a:hover{
+    border-bottom: 1px solid black;
+}
+.heading a,.content a{
+    color:black;
+    line-height: 3.0;
+}
 /*フッター
 ---------------------------*/
 .footer_bottom{
     border-top: thin solid gray;
+    font-size: 12px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+.footer_wrapper{
+    color:gray;
+    padding-left: 25%;
+}
+.footer_wrapper a{
+    color: gray;
+}
+.footer_wrapper a:hover{
+    border-bottom: 2px solid gray;
 }
 .footer_bottom ul{
     display: flex;
-    justify-content: center;
+    margin: 70px 0 20px 0;
+}
+
+.stick a:after{
+    content: "|";
+    margin: 0 18px;
+    color: gray;
 }
