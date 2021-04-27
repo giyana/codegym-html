@@ -284,10 +284,10 @@ li{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 .page-title{
-    margin: 40px auto;
+    margin: 30px;
 }
 .page-title li:before{
     content: ">";
@@ -296,7 +296,7 @@ li{
     font-size: 10px;
 }
 .heading{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 .heading a:hover{
@@ -310,25 +310,25 @@ li{
 }
 .heading a,.content a{
     color:black;
-    line-height: 3.0;
+    line-height: 2.5;
 }
 /*フッター
 ---------------------------*/
 .footer_bottom{
-    border-top: thin solid gray;
+    border-top: thin solid #999;
     font-size: 12px;
-    margin-bottom: 100px;
+    margin-bottom:100px;
     width: 100%;
 }
 .footer_wrapper{
-    color:gray;
+    color: #999;
     padding-left: 25%;
 }
 .footer_wrapper a{
-    color: gray;
+    color: #999;
 }
 .footer_wrapper a:hover{
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #999;
 }
 .footer_bottom ul{
     display: flex;
@@ -337,5 +337,5 @@ li{
 .stick a:after{
     content: "|";
     margin: 0 18px;
-    color: gray;
+    color: #999;
 }
