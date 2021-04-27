@@ -107,7 +107,7 @@ li{
 .article-icon_above p{
     color: gray;
     font-weight: bold;
-    font-size: 2px;
+    font-size: 11px;
 }
 .article-icon_above ul{
     display: flex;
@@ -193,7 +193,7 @@ li{
 .article-icon_below p{
     color: gray;
     font-weight: bold;
-    font-size: 2px;
+    font-size: 11px;
 }
 .article-icon_below ul{
     display: flex;
