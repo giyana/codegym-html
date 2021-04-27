@@ -129,15 +129,25 @@ li{
 }
 .article-content-pdf{
     text-align: center;
-    background: #0c419a;
+    background: #005bac;
     margin: 30px auto;
     width: 300px;
+    padding: 12px 0;
+    position: relative;
+    line-height: 1;
 }
 .article-content-pdf:hover{
     opacity: 0.5;
 }
 .article-content-pdf a{
     color: white
+}
+.article-content-pdf a:before{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    content: ">";
+    font-size: 5px;
 }
 .article-content-pdf img{
     width: 30px;
