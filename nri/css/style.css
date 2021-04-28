@@ -8,7 +8,7 @@ html {
     font-feature-settings: "palt"
 }
 body{
-    font-family: 'Noto Sans JP',sans-serif!important;
+    font-family: 'Noto Sans JP',sans-serif;
 }
 a{
     text-decoration: none;
@@ -365,3 +365,5 @@ nav{
     margin: 0 18px;
     color: #999;
 }
+/*ページトップに戻るボタン
+--------------------------*/
