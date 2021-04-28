@@ -203,13 +203,14 @@ nav{
     border-bottom: unset;
 }
 .block_wrapper > .container > .item a{
-    display: block;
+    display: flex;
     color: #0c419a;
     padding: 15px 20px;
     width: 100%;
     height: 100%;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 .article-icon_below {
     display: flex;
