@@ -106,17 +106,17 @@ nav{
 .ico{
     margin:0 10px;
 }
-.article-icon_above{
+.article_icon_above{
     display: flex;
     justify-content: flex-end;
     margin: 35px 0;
 }
-.article-icon_above p{
+.article_icon_above p{
     color: gray;
     font-weight: bold;
     font-size: 11px;
 }
-.article-icon_above ul{
+.article_icon_above ul{
     display: flex;
 }
 .article-content img{
@@ -160,19 +160,19 @@ nav{
     width: 30px;
     text-align: center;
 }
-.article-content-page_frontback{
+.article-content-page-frontback{
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
 }
-.article-content-page_frontback a{
+.article-content-page-frontback a{
     color: #0c419a;
     padding: 0 5px;
 }
-.article-content-page_frontback a:hover{
+.article-content-page-frontback a:hover{
     border-bottom: 1px solid #0c419a;
 }
-.article-content-page_block{
+.article-content-pageblock{
     background-color: #deecf8;
     padding: 20px;
 }
@@ -212,17 +212,17 @@ nav{
     text-align: center;
     justify-content: center;
 }
-.article-icon_below {
+.article-icon-below {
     display: flex;
     justify-content: flex-end;
     margin: 35px 0;
 }
-.article-icon_below p{
+.article-icon-below p{
     color: gray;
     font-weight: bold;
     font-size: 11px;
 }
-.article-icon_below ul{
+.article-icon-below ul{
     display: flex;
 }
 /*企業情報
