@@ -103,7 +103,7 @@ nav{
 .icon-item img{
     height: 25px;
 }
-.ico{
+.icon{
     margin:0 10px;
 }
 .article_icon_above{
@@ -360,10 +360,27 @@ nav{
     display: flex;
     margin: 70px 0 20px 0;
 }
-.stick a:after{
+.stick p:after{
     content: "|";
     margin: 0 18px;
     color: #999;
 }
+.stick{
+    display: flex;
+}
 /*ページトップに戻るボタン
 --------------------------*/
+.btn_page_top{
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    position: fixed;
+}
+.btn_page_top a{
+    height: 60px;
+    font-size: 25px;
+}
+.icon-top:before {
+    content: "\e901";
+    color: black;
+}
