@@ -99,7 +99,13 @@ nav{
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 40px;
-    line-height: 1.8;
+    line-height: 2.0;
+}
+.title p{
+    font-size: 20px;
+}
+.title h2{
+    font-size: 29px;
 }
 .icon-item img{
     height: 25px;
