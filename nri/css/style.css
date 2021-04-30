@@ -99,6 +99,14 @@ nav{
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 40px;
+    line-height: 1.8;
+}
+.title_strength{
+    font-size: 20px;
+}
+.title_paragraph{
+    font-size: 30px;
+    font-weight: bold;
 }
 .icon-item img{
     height: 25px;
