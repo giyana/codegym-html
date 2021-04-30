@@ -351,12 +351,12 @@ nav{
 .footer_bottom{
     border-top: thin solid #999;
     font-size: 12px;
-    margin-bottom:100px;
     width: 100%;
 }
 .footer_wrapper{
     color: #999;
     padding:0 25%;
+    margin-bottom:100px;
 }
 .footer_wrapper a{
     color: #999;
@@ -379,16 +379,21 @@ nav{
 /*ページトップに戻るボタン
 --------------------------*/
 .btn_page_top{
+    position: fixed;
+    right: 0;
+    bottom: 0;
     width: 60px;
     height: 60px;
     background-color: #333;
-    position: fixed;
+    justify-content: center;
+    align-content: center;
 }
 .btn_page_top a{
-    height: 60px;
-    font-size: 25px;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.icon-top:before {
-    content: "\e901";
-    color: black;
+.icon_page_top{
+    height: 28px;
 }
