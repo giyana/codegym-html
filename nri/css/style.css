@@ -72,7 +72,7 @@ nav{
 /*本文
 ---------------------*/
 .article_paragraph{
-    width: 750px;
+    width: 800px;
     margin: 0 auto;
     }
 .header-index{
@@ -137,9 +137,10 @@ nav{
     margin-bottom: 25px;
 }
 .article-content-text p{
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 2;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 1.5px;
 }
 .article-content-pdf{
     text-align: center;
@@ -222,7 +223,7 @@ nav{
 .article-icon-below {
     display: flex;
     justify-content: flex-end;
-    margin: 35px 0;
+    margin: 35px 0 120px 0;
 }
 .article-icon-below p{
     color: gray;
@@ -348,20 +349,20 @@ nav{
 /*フッター
 ---------------------------*/
 .footer_bottom{
-    border-top: thin solid #999;
+    border-top: thin solid #ccc;
     font-size: 12px;
     width: 100%;
 }
 .footer_wrapper{
     color: #999;
-    padding:0 25%;
-    margin-bottom:100px;
+    width: fit-content;
+    margin: 0 auto 100px auto;
 }
 .footer_wrapper a{
     color: #999;
 }
 .footer_wrapper a:hover{
-    border-bottom: 2px solid #999;
+    border-bottom: 1px solid #999;
 }
 .footer_bottom ul{
     display: flex;
@@ -374,6 +375,9 @@ nav{
 }
 .stick{
     display: flex;
+}
+.copyright{
+    color: #333;
 }
 /*ページトップに戻るボタン
 --------------------------*/
